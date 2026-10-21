@@ -1,5 +1,6 @@
-from picamera2 import Picamera2
+from picamera2 import Picamera2, Preview
 import numpy as np
+from time import sleep
 
 picam2 = Picamera2()
 picam2.configure(picam2.create_preview_configuration())
@@ -9,3 +10,8 @@ overlay[:150, 200:] = (255, 0, 0, 64) # reddish
 overlay[150:, :200] = (0, 255, 0, 64) # greenish
 overlay[150:, 200:] = (0, 0, 255, 64) # blueish
 picam2.set_overlay(overlay)
+
+picam2.start_preview(Preview.QTGL)
+picam2.start()
+sleep(2)
+picam2.capture_file("test.jpg")

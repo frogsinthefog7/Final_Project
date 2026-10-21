@@ -134,6 +134,7 @@ def music_screen(fig):
 
 def camera_screen(fig):
     # Code to display camera screen with options to take photos with fig specific overlay
+    # Code to look through photos
     
     pass
 
@@ -148,7 +149,7 @@ def main():
     # if fig2 is placed, call fig2_screen()
     # if fig3 is placed, call fig3_screen()
     # if fig4 is placed, call fig4_screen()
-    # else idle y2k themed screen
+    # else idle y2k themed screen, with ability to look through photos
     pass
 
 #Pseudo Code for the final project

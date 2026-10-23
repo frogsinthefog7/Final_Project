@@ -9,7 +9,7 @@ from gpiozero.pins.mock import MockFactory
 pin_factory = MockFactory()
 
 # Create a servo object on GPIO pin 17
-my_servo = servo.Servo(17, pin_factory=pin_factory)
+my_servo = servo.Servo(16, pin_factory=pin_factory)
 
 #if music played move servo back and forth
 def move_servo():

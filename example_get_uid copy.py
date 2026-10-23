@@ -5,7 +5,7 @@ is the most reliable and universally supported.
 After initialization, try waving various 13.56MHz RFID cards over it!
 """
 
-import RPi.GPIO as GPIO
+"""import RPi.GPIO as GPIO
 
 from pn532 import *
 
@@ -34,4 +34,4 @@ if __name__ == '__main__':
     except Exception as e:
         print(e)
     finally:
-        GPIO.cleanup()
+        GPIO.cleanup()"""

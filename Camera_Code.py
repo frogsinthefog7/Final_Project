@@ -1,6 +1,5 @@
 from picamera2 import Picamera2, Preview
 import time
-import os
 
 """"folder_path = "/home/mads/'Final_Project Git'/Final_Project/'Photo Gallary'"
 os.makedirs(folder_path, exist_ok=True)

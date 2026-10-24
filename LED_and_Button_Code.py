@@ -15,8 +15,9 @@ Down_Arrow = Button(27, pin_factory=pin_factory)
 Left_Arrow = Button(22, pin_factory=pin_factory)
 Right_Arrow = Button(23, pin_factory=pin_factory)
 Confirm_Button = Button(24, pin_factory=pin_factory)
+back_button = Button(25, pin_factory=pin_factory)
 
-buttons = [Up_Arrow, Down_Arrow, Left_Arrow, Right_Arrow, Confirm_Button]
+buttons = [Up_Arrow, Down_Arrow, Left_Arrow, Right_Arrow, Confirm_Button, back_button]
 
 def button_pressed(button):
 
@@ -35,6 +36,9 @@ def button_pressed(button):
     elif button == Confirm_Button:
         print("Confirm Button pressed")
         Confirm_Button_pressed()
+    elif button == back_button:
+        print("Back Button pressed")
+        back_button_pressed()
 
 def Up_Arrow_pressed():
     print("Up Arrow pressed")
@@ -55,3 +59,7 @@ def Right_Arrow_pressed():
 def Confirm_Button_pressed():
     print("Confirm Button pressed")
     # Confirm Button pressed
+
+def back_button_pressed():
+    print("Back Button pressed")
+    # Back Button pressed

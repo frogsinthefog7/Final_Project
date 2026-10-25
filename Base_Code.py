@@ -4,6 +4,7 @@ from time import sleep, time
 from gpiozero import LED, Button
 from gpiozero.pins.mock import MockFactory
 from gpiozero import Servo
+import threading
 """import RPi.GPIO as GPIO
 from pn532 import *
 from pn532test.pn532.spi import PN532_SPI"""
@@ -30,6 +31,9 @@ camera_config = picam2.create_preview_configuration()
 picam2.configure(camera_config)"""
 
 buttons = [Up_Arrow, Down_Arrow, Left_Arrow, Right_Arrow, Confirm_Button, Back_Button]
+
+#Turn Power_LED on When code starts up
+Power_LED.on()
 
 class Button:
     def __init__(self, pin, pin_factory=pin_factory):

@@ -3,10 +3,10 @@ import numpy as np"""
 from time import sleep, time
 from gpiozero import LED, Button
 from gpiozero.pins.mock import MockFactory
-from gpiozero import servo
-import RPi.GPIO as GPIO
+from gpiozero import Servo
+"""import RPi.GPIO as GPIO
 from pn532 import *
-from pn532test.pn532.spi import PN532_SPI
+from pn532test.pn532.spi import PN532_SPI"""
 
 pin_factory = MockFactory()
 
@@ -22,7 +22,7 @@ Right_Arrow = Button(23, pin_factory=pin_factory)
 Confirm_Button = Button(24, pin_factory=pin_factory)
 Back_Button = Button(25, pin_factory=pin_factory)
 # Create a servo object on GPIO pin 17
-my_servo = servo.Servo(16, pin_factory=pin_factory)
+"my_servo = Servo(16, pin_factory=pin_factory)"
 #create Picamera2 object for camera functionality
 """picam2 = Picamera2()
 camera_config = picam2.create_preview_configuration()
@@ -227,7 +227,7 @@ def fig1_screen():
     #if camera button is clicked, call camera_screen(fig1)
 
     #code for testing purposes
-    user_input = input("Type '1' for dressup, '2' for bedroom, '3' for music, and '4' for camera")
+    user_input = int(input("Type '1' for dressup, '2' for bedroom, '3' for music, '4' for camera, and '5' to go back to main screen: "))
     if user_input == 1:
         dressup_screen("fig1")
     elif user_input == 2:
@@ -236,6 +236,8 @@ def fig1_screen():
         music_screen("fig1")
     elif user_input == 4:
         camera_screen("fig1")
+    elif user_input == 5:
+        main()
     else:
         print("I didn't quite get that.")
         fig1_screen()
@@ -247,7 +249,7 @@ def fig2_screen():
     #if bedroom button is clicked, call bedroom_screen(fig2)
     #if music button is clicked, call music_screen(fig2)
     #if camera button is clicked, call camera_screen(fig2)
-    user_input = input("Type '1' for dressup, '2' for bedroom, '3' for music, and '4' for camera")
+    user_input = int(input("Type '1' for dressup, '2' for bedroom, '3' for music, '4' for camera, and '5' to go back to main screen: "))
     if user_input == 1:
         dressup_screen("fig2")
     elif user_input == 2:
@@ -256,6 +258,8 @@ def fig2_screen():
         music_screen("fig2")
     elif user_input == 4:
         camera_screen("fig2")
+    elif user_input == 5:
+        main()
     else:
         print("I didn't quite get that.")
         fig2_screen()
@@ -267,7 +271,7 @@ def fig3_screen():
     #if bedroom button is clicked, call bedroom_screen(fig3)
     #if music button is clicked, call music_screen(fig3)
     #if camera button is clicked, call camera_screen(fig3)
-    user_input = input("Type '1' for dressup, '2' for bedroom, '3' for music, and '4' for camera")
+    user_input = int(input("Type '1' for dressup, '2' for bedroom, '3' for music, '4' for camera, and '5' to go back to main screen: "))
     if user_input == 1:
         dressup_screen("fig3")
     elif user_input == 2:
@@ -276,6 +280,8 @@ def fig3_screen():
         music_screen("fig3")
     elif user_input == 4:
         camera_screen("fig3")
+    elif user_input == 5:
+        main()
     else:
         print("I didn't quite get that.")
         fig3_screen()
@@ -287,7 +293,7 @@ def fig4_screen():
     #if bedroom button is clicked, call bedroom_screen(fig4)
     #if music button is clicked, call music_screen(fig4)
     #if camera button is clicked, call camera_screen(fig4)
-    user_input = input("Type '1' for dressup, '2' for bedroom, '3' for music, and '4' for camera")
+    user_input = int(input("Type '1' for dressup, '2' for bedroom, '3' for music, '4' for camera, and '5' to go back to main screen: "))
     if user_input == 1:
         dressup_screen("fig4")
     elif user_input == 2:
@@ -296,6 +302,8 @@ def fig4_screen():
         music_screen("fig4")
     elif user_input == 4:
         camera_screen("fig4")
+    elif user_input == 5:
+        main()
     else:
         print("I didn't quite get that.")
         fig4_screen()
@@ -420,18 +428,19 @@ def main():
     # Initialize NFC reader to detect fig placement
 
     #Code for testing purposes will be user_input, for final project, will be NFC reader
-    user_input = input("Type 1 for fig1_screen, 2 for fig2_screen, 3 for fig3_screen, 4 for fig4_screen, or q to quit: ")
-    if user_input == "1":
-        fig1_screen()
-    elif user_input == "2":
-        fig2_screen()
-    elif user_input == "3":
-        fig3_screen()
-    elif user_input == "4":
-        fig4_screen()
-    elif user_input == "q":
-        print("Quitting the program.")
-        quit()
+    if __name__ == '__main__':
+        user_input = input("Type 1 for fig1_screen, 2 for fig2_screen, 3 for fig3_screen, 4 for fig4_screen, or q to quit: ")
+        if user_input == "1":
+            fig1_screen()
+        elif user_input == "2":
+            fig2_screen()
+        elif user_input == "3":
+            fig3_screen()
+        elif user_input == "4":
+            fig4_screen()
+        elif user_input == "q":
+            print("Quitting the program.")
+            quit()
 
     """if __name__ == '__main__':
         try:
@@ -459,6 +468,8 @@ def main():
             GPIO.cleanup()"""
 
     # else idle y2k themed screen, with ability to look through photos
+
+main()
 
 
 #Pseudo Code for the final project

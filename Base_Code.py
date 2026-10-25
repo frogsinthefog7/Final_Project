@@ -200,6 +200,11 @@ class Music:
         # Code to stop the music
         pass
 
+fig1_song = Music('Cherries', 'audio_file')
+fig2_song = Music('My Girl', 'audio_file')
+fig3_song = Music('Bubblegum', 'audio_file')
+fig4_song = Music('Lofi-Girl Study Beats', 'audio_file')
+
 class Camera:
     def __init__(self, name, overlay_image):
         self.name = name
@@ -208,6 +213,11 @@ class Camera:
     def take_photo(self):
         # Code to take a photo with the overlay image
         pass
+
+fig1_overlay = Camera('Cherries', 'image')
+fig2_overlay = Camera('Autum Leaves', 'image')
+fig3_overlay = Camera('Pink Hearts + Bubbles', 'image')
+fig4_overlay = Camera('Books+Quills', 'image')
 
 def move_servo():
     # Move the servo to the minimum position
@@ -229,6 +239,12 @@ def move_servo():
     
     my_servo.mid()
     print("Servo moved to center position")
+
+
+#When Up Arrow pressed if on button A do nothing, if on B move to A, if on C move to B, if on D move to B
+#When Down Arrow pressed if on button A move to B, if on B move to C, if on C move to D, if on D do nothing
+#When Left Arrow pressed if on 'back' move to D if on A-D do nothing
+#When Right Arrow pressed if on A-D move to 'back' if on 'back' do nothing
 
 def button_pressed(button):
 

@@ -22,6 +22,7 @@ Right_Arrow = Button(23, pin_factory=pin_factory)
 Confirm_Button = Button(24, pin_factory=pin_factory)
 Back_Button = Button(25, pin_factory=pin_factory)
 # Create a servo object on GPIO pin 17
+my_servo = "this_is_a_place_holder"
 "my_servo = Servo(16, pin_factory=pin_factory)"
 #create Picamera2 object for camera functionality
 """picam2 = Picamera2()
@@ -107,6 +108,85 @@ class ClothingType:
     def sell(self):
         # Code to sell the clothing item (e.g., remove it from inventory and add currency)
         pass
+
+fig1_Dressup = [
+    Clothing('Sweetheart Tee', 'image', ClothingType('Top', 'pos', 'size'), '5 coins'),
+    Clothing('Cherry Tank', 'image', ClothingType('Top', 'pos', 'size'), '4 coins'),
+    Clothing('Light Cordoroy Shorts', 'image', ClothingType('Bottoms', 'pos', 'size'), '4 coins'),
+    Clothing('Cloudy Ruffle Skirt', 'image', ClothingType('Bottoms', 'pos', 'size'), '5 coins'),
+    Clothing('Cherry Mary Janes', 'image', ClothingType('Shoes', 'pos', 'size'), '4 coins'),
+    Clothing('Knee High Black Boots', 'image', ClothingType('Shoes', 'pos', 'size'), '5 coins'),
+    Clothing('Light Cordoroy Newsboy hat', 'image', ClothingType('Hat', 'pos', 'size'), '5 coins'),
+    Clothing('Cherry Headband', 'image', ClothingType('Hat', 'pos', 'size'), '3 coins'),
+    Clothing('Sweetheart Necklace', 'image', ClothingType('Acessory', 'pos', 'size'), '2 coins'),
+    Clothing('Swan Legwarmers', 'image', ClothingType('Acessory', 'pos', 'size'), '3 coins')
+]
+
+fig2_Dressup = [
+    Clothing('Chai Sweater', 'image', ClothingType('Top', 'pos', 'size'), '5 coins'),
+    Clothing('Cozy Tee w/ longsleeves underneath', 'image', ClothingType('Top', 'pos', 'size'), '4 coins'),
+    Clothing('Dark Cordoroy Jeans w/ flower embroidery', 'image', ClothingType('Bottoms', 'pos', 'size'), '4 coins'),
+    Clothing('Cream Maxi-Skirt', 'image', ClothingType('Bottoms', 'pos', 'size'), '5 coins'),
+    Clothing('Chai Sneakers', 'image', ClothingType('Shoes', 'pos', 'size'), '4 coins'),
+    Clothing('Chuncky Leather Boots', 'image', ClothingType('Shoes', 'pos', 'size'), '5 coins'),
+    Clothing('Dark Cordoroy Newsboy hat', 'image', ClothingType('Hat', 'pos', 'size'), '5 coins'),
+    Clothing('Cozy Beanie', 'image', ClothingType('Hat', 'pos', 'size'), '3 coins'),
+    Clothing('Chuncky Leather Jacket', 'image', ClothingType('Acessory', 'pos', 'size'), '6 coins'),
+    Clothing('Leaf Earings', 'image', ClothingType('Acessory', 'pos', 'size'), '3 coins')
+    #cozy = cream/green/yellow/black stripes vibe
+]
+
+fig3_Dressup = [
+    Clothing('Bubblegum Ruffle Dress', 'image', ClothingType('Top', 'pos', 'size'), '6 coins'),
+    Clothing('Chantilly Blouse', 'image', ClothingType('Top', 'pos', 'size'), '4 coins'),
+    Clothing('Light-Wash, Mid-Rise, Skinny Jeans', 'image', ClothingType('Bottoms', 'pos', 'size'), '4 coins'),
+    Clothing('Bubblegum Ruffle Skirt', 'image', ClothingType('Bottoms', 'pos', 'size'), '5 coins'),
+    Clothing('Bubblegum Heels', 'image', ClothingType('Shoes', 'pos', 'size'), '4 coins'),
+    Clothing('Mini Carmel Boots', 'image', ClothingType('Shoes', 'pos', 'size'), '5 coins'),
+    Clothing('Carmel Ribbon', 'image', ClothingType('Hat', 'pos', 'size'), '5 coins'),
+    Clothing('Bow Clips', 'image', ClothingType('Hat', 'pos', 'size'), '3 coins'),
+    Clothing('Chantilly Leg-Warmers', 'image', ClothingType('Acessory', 'pos', 'size'), '6 coins'),
+    Clothing('Carmel-Ribbon Necklace', 'image', ClothingType('Acessory', 'pos', 'size'), '3 coins')
+]
+
+fig4_Dressup = [
+    Clothing('Chocolate Waist-Coat, with Cream Blouse', 'image', ClothingType('Top', 'pos', 'size'), '6 coins'),
+    Clothing('Carmel Sweater vest, with Coffee Blouse', 'image', ClothingType('Top', 'pos', 'size'), '4 coins'),
+    Clothing('Chocolate Midi-Skirt', 'image', ClothingType('Bottoms', 'pos', 'size'), '4 coins'),
+    Clothing('Carmel Slacks', 'image', ClothingType('Bottoms', 'pos', 'size'), '5 coins'),
+    Clothing('Black Mary-Janes', 'image', ClothingType('Shoes', 'pos', 'size'), '4 coins'),
+    Clothing('Knee-High Black Boots', 'image', ClothingType('Shoes', 'pos', 'size'), '5 coins'),
+    Clothing('Chocolate Barret', 'image', ClothingType('Hat', 'pos', 'size'), '5 coins'),
+    Clothing('Coffe Lace-Ribbon', 'image', ClothingType('Hat', 'pos', 'size'), '3 coins'),
+    Clothing('Chocolate Long-Coat', 'image', ClothingType('Acessory', 'pos', 'size'), '6 coins'),
+    Clothing('Dark-Chocolate Tights', 'image', ClothingType('Acessory', 'pos', 'size'), '3 coins')
+]
+
+#Figure PJ's (What they wear when no Outfit Applied)//No Acessories or hats
+
+fig1_base_outfit = [
+    Clothing('Cherry PJ Top', 'image', ClothingType('Top', 'pos', 'size'), 'No Price'),
+    Clothing('Cherry PJ Bottoms', 'image', ClothingType('Bottoms', 'pos', 'size'), 'No Price'),
+    Clothing('Lace Cherry Socks', 'image', ClothingType('Shoes', 'pos', 'size'), 'No Price')
+]
+
+fig2_base_outfit = [
+    Clothing('Chai PJ Top', 'image', ClothingType('Top', 'pos', 'size'), 'No Price'),
+    Clothing('Chai PJ Bottoms', 'image', ClothingType('Bottoms', 'pos', 'size'), 'No Price'),
+    Clothing('Lace Chai Socks', 'image', ClothingType('Shoes', 'pos', 'size'), 'No Price')
+]
+
+fig3_base_outfit = [
+    Clothing('Bubblegum PJ Top', ClothingType('Top', 'pos', 'size'), 'Top', 'No Price'),
+    Clothing('Bubblegum PJ Bottoms', 'image', ClothingType('Bottoms', 'pos', 'size'), 'No Price'),
+    Clothing('Lace Chantilly Socks', 'image', ClothingType('Shoes', 'pos', 'size'), 'No Price')
+]
+
+fig4_base_outfit = [
+    Clothing('Caramel PJ Top', ClothingType('Top', 'pos', 'size'), 'Top', 'No Price'),
+    Clothing('Caramel PJ Bottoms', 'image', ClothingType('Bottoms', 'pos', 'size'), 'No Price'),
+    Clothing('Lace Chocolate Socks', 'image', ClothingType('Shoes', 'pos', 'size'), 'No Price')
+]
 
 class Music:
     def __init__(self, name, audio_file):

@@ -24,9 +24,9 @@ Back_Button = Button(25, pin_factory=pin_factory)
 # Create a servo object on GPIO pin 17
 my_servo = servo.Servo(16, pin_factory=pin_factory)
 #create Picamera2 object for camera functionality
-picam2 = Picamera2()
+"""picam2 = Picamera2()
 camera_config = picam2.create_preview_configuration()
-picam2.configure(camera_config)
+picam2.configure(camera_config)"""
 
 buttons = [Up_Arrow, Down_Arrow, Left_Arrow, Right_Arrow, Confirm_Button, Back_Button]
 

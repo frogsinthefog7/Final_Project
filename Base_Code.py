@@ -46,10 +46,10 @@ class Figurine:
         # Code to switch screen based on the figurine placed
         pass
 
-fig1 = Figurine('Evangaline')
-fig2 = Figurine('August')
-fig3 = Figurine('Elle')
-fig4 = Figurine('Blythe')
+fig1 = Figurine('Evangaline', 1, 'UID', 'fig1_screen')
+fig2 = Figurine('August', 2, 'UID', 'fig2_screen')
+fig3 = Figurine('Elle', 3, 'UID', 'fig3_screen')
+fig4 = Figurine('Blythe', 4, 'UID', 'fig4_screen')
 
 class Furniture:
     def __init__(self, name, image, furniture_type, price):
@@ -448,12 +448,6 @@ def move_servo():
     my_servo.mid()
     print("Servo moved to center position")
 
-
-#When Up Arrow pressed if on button A do nothing, if on B move to A, if on C move to B, if on D move to B
-#When Down Arrow pressed if on button A move to B, if on B move to C, if on C move to D, if on D do nothing
-#When Left Arrow pressed if on 'back' move to D if on A-D do nothing
-#When Right Arrow pressed if on A-D move to 'back' if on 'back' do nothing
-
 def Up_Arrow_pressed():
 
     #If on button A:
@@ -539,7 +533,9 @@ def fig1_screen():
     else:
         print("I didn't quite get that.")
         fig1_screen()
-    
+
+#build actual screen
+
 def fig2_screen():
     print("You're on Fig_2 Screen")
     # Code to display fig2 screen with buttons for Dressup, Bedroom, Music, and Camera
@@ -561,6 +557,8 @@ def fig2_screen():
     else:
         print("I didn't quite get that.")
         fig2_screen()
+
+#build actual screen
 
 def fig3_screen():
     print("You're on Fig_3 Screen")
@@ -584,6 +582,8 @@ def fig3_screen():
         print("I didn't quite get that.")
         fig3_screen()
 
+#build actual screen
+
 def fig4_screen():
     print("You're on Fig_4 Screen")
     # Code to display fig4 screen with buttons for Dressup, Bedroom, Music, and Camera
@@ -605,6 +605,8 @@ def fig4_screen():
     else:
         print("I didn't quite get that.")
         fig4_screen()
+
+#build actual screen
 
 def dressup_screen(fig):
     print(f"your on dressup_screen for {fig}")

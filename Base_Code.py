@@ -103,7 +103,7 @@ fig2_basic_Furniture = [
     Furniture('Chai Clock', 'image', FurnitureType('Clock', 'pos', 'size'), '2'),
     Furniture('Chai Chair', 'image', FurnitureType('Side Acessory one', 'pos', 'size'), '4'),
     Furniture('Tall Chai Lamp', 'image', FurnitureType('Side Acessory two', 'pos', 'size'), '4'),
-    Furniture('Midtone Wood Flooring', 'image', FurnitureType('Flooring', 'pos', 'size'), '2'),
+    Furniture('Light Wood Flooring', 'image', FurnitureType('Flooring', 'pos', 'size'), '2'),
     Furniture('Creamy Leaf Detailed Wallpaper', 'image', FurnitureType('Wallpaper', 'pos', 'size'), '2'),
     Furniture('Box Window with Cozy Drapes', 'image', FurnitureType('Window', 'pos', 'size'), '15')
 ]
@@ -162,7 +162,11 @@ fig1_Furniture = [
 
     Furniture('Cherry Lamp', 'image', FurnitureType('Side Acessory one', 'pos', 'size'), '4'),
     Furniture('Cherry Side Table', 'image', FurnitureType('Side Acessory one', 'pos', 'size'), '4'),
+    Furniture('Fabric Storage', 'image', FurnitureType('Side Acessory one', 'pos', 'size'), '4'),
+    Furniture('Fluffy Chair', 'image', FurnitureType('Side Acessory one', 'pos', 'size'), '4'),
 
+    Furniture('Cherry Lamp', 'image', FurnitureType('Side Acessory two', 'pos', 'size'), '4'),
+    Furniture('Cherry Side Table', 'image', FurnitureType('Side Acessory two', 'pos', 'size'), '4'),
     Furniture('Fabric Storage', 'image', FurnitureType('Side Acessory two', 'pos', 'size'), '4'),
     Furniture('Fluffy Chair', 'image', FurnitureType('Side Acessory two', 'pos', 'size'), '4'),
 
@@ -178,113 +182,125 @@ fig1_Furniture = [
 
 fig2_Furniture = [
     Furniture('Cozy Bed', 'image', FurnitureType('Bed', 'pos', 'size'), '10'),
-    Furniture('A Bed', 'image', FurnitureType('Bed', 'pos', 'size'), '10'),
+    Furniture('Autumn Bed', 'image', FurnitureType('Bed', 'pos', 'size'), '10'),
 
-    Furniture('A RUG', 'image', FurnitureType('Rug', 'pos', 'size'), '3'),
-    Furniture('A RUG', 'image', FurnitureType('Rug', 'pos', 'size'), '3'),
+    Furniture('Fluffy Leaf Rug', 'image', FurnitureType('Rug', 'pos', 'size'), '3'),
+    Furniture('Creamy Rug', 'image', FurnitureType('Rug', 'pos', 'size'), '3'),
 
-    Furniture('A DRESSER', 'image', FurnitureType('Dresser', 'pos', 'size'), '5'),
-    Furniture('A DRESSER', 'image', FurnitureType('Dresser', 'pos', 'size'), '5'),
+    Furniture('Burnt leaves Dresser', 'image', FurnitureType('Dresser', 'pos', 'size'), '5'),
+    Furniture('Cozy Chai Dresser', 'image', FurnitureType('Dresser', 'pos', 'size'), '5'),
 
-    Furniture('Wall Hanging', 'image', FurnitureType('Wall Hanging', 'pos', 'size'), '2'),
+    Furniture('hanging knit', 'image', FurnitureType('Wall Hanging', 'pos', 'size'), '2'),
     Furniture('Chai record Display', 'image', FurnitureType('Wall Hanging', 'pos', 'size'), '2'),
 
-    Furniture('light', 'image', FurnitureType('Light', 'pos', 'size'), '7'),
-    Furniture('light', 'image', FurnitureType('Light', 'pos', 'size'), '7'),
+    Furniture('Autumn glow light', 'image', FurnitureType('Light', 'pos', 'size'), '7'),
+    Furniture('Leaf chandalier', 'image', FurnitureType('Light', 'pos', 'size'), '7'),
 
-    Furniture('Dresser Acessory', 'image', FurnitureType('Dresser Acessory', 'pos', 'size'), '2'),
-    Furniture('Dresser Acessory', 'image', FurnitureType('Dresser Acessory', 'pos', 'size'), '2'),
+    Furniture('coffee cup, on top of a notebook', 'image', FurnitureType('Dresser Acessory', 'pos', 'size'), '2'),
+    Furniture('pens/pencils jar etc.', 'image', FurnitureType('Dresser Acessory', 'pos', 'size'), '2'),
 
-    Furniture('Clock', 'image', FurnitureType('Clock', 'pos', 'size'), '2'),
-    Furniture('Clock', 'image', FurnitureType('Clock', 'pos', 'size'), '2'),
+    Furniture('leaf clock', 'image', FurnitureType('Clock', 'pos', 'size'), '2'),
+    Furniture('Cozy Chai Clock', 'image', FurnitureType('Clock', 'pos', 'size'), '2'),
 
-    Furniture('Side Acessory one', 'image', FurnitureType('Side Acessory one', 'pos', 'size'), '4'),
-    Furniture('Side Acessory one', 'image', FurnitureType('Side Acessory one', 'pos', 'size'), '4'),
+    Furniture('Window bench', 'image', FurnitureType('Side Acessory one', 'pos', 'size'), '17'),
+    Furniture('Chai Laundry Basket', 'image', FurnitureType('Side Acessory one', 'pos', 'size'), '4'),
+    Furniture('side writing desk', 'image', FurnitureType('Side Acessory one', 'pos', 'size'), '7'),
+    Furniture('stuffed animal pile', 'image', FurnitureType('Side Acessory one', 'pos', 'size'), '4'),
 
-    Furniture('Side Acessory two', 'image', FurnitureType('Side Acessory two', 'pos', 'size'), '4'),
-    Furniture('Side Acessory two', 'image', FurnitureType('Side Acessory two', 'pos', 'size'), '4'),
+    Furniture('Window bench', 'image', FurnitureType('Side Acessory two', 'pos', 'size'), '17'),
+    Furniture('Chai Laundry Basket', 'image', FurnitureType('Side Acessory two', 'pos', 'size'), '4'),
+    Furniture('side writing desk', 'image', FurnitureType('Side Acessory two', 'pos', 'size'), '7'),
+    Furniture('stuffed animal pile', 'image', FurnitureType('Side Acessory two', 'pos', 'size'), '4'),
 
-    Furniture('flooring', 'image', FurnitureType('Flooring', 'pos', 'size'), '2'),
-    Furniture('flooring', 'image', FurnitureType('Flooring', 'pos', 'size'), '2'),
+    Furniture('Fluffy carpet', 'image', FurnitureType('Flooring', 'pos', 'size'), '2'),
+    Furniture('Dark Oak Flooring', 'image', FurnitureType('Flooring', 'pos', 'size'), '2'),
 
-    Furniture('Wallpaper', 'image', FurnitureType('Wallpaper', 'pos', 'size'), '2'),
-    Furniture('Wallpaper', 'image', FurnitureType('Wallpaper', 'pos', 'size'), '2'),
+    Furniture('leafy wallpaper', 'image', FurnitureType('Wallpaper', 'pos', 'size'), '2'),
+    Furniture('Sophisticated fall wallpaper', 'image', FurnitureType('Wallpaper', 'pos', 'size'), '2'),
 
     Furniture('Arch Window', 'image', FurnitureType('Window', 'pos', 'size'), '15'),
     Furniture('Delicate Frame Window', 'image', FurnitureType('Window', 'pos', 'size'), '15')
 ]
 
 fig3_Furniture = [
-    Furniture('Bed', 'image', FurnitureType('Bed', 'pos', 'size'), '10'),
-    Furniture('bed', 'image', FurnitureType('Bed', 'pos', 'size'), '10'),
+    Furniture('Heart Shaped princess bed', 'image', FurnitureType('Bed', 'pos', 'size'), '10'),
+    Furniture('Bubblegum Inset Sofa Bed', 'image', FurnitureType('Bed', 'pos', 'size'), '10'),
 
-    Furniture('rug', 'image', FurnitureType('Rug', 'pos', 'size'), '3'),
-    Furniture('rug', 'image', FurnitureType('Rug', 'pos', 'size'), '3'),
+    Furniture('Fluffy pink rug', 'image', FurnitureType('Rug', 'pos', 'size'), '3'),
+    Furniture('Chantilly rug', 'image', FurnitureType('Rug', 'pos', 'size'), '3'),
 
-    Furniture('dresser', 'image', FurnitureType('Dresser', 'pos', 'size'), '5'),
-    Furniture('dresser', 'image', FurnitureType('Dresser', 'pos', 'size'), '5'),
+    Furniture('pink floor to ceiling closet', 'image', FurnitureType('Dresser', 'pos', 'size'), '5'),
+    Furniture('cozy chantilly dresser', 'image', FurnitureType('Dresser', 'pos', 'size'), '5'),
 
-    Furniture('wall hanging', 'image', FurnitureType('Wall Hanging', 'pos', 'size'), '2'),
+    Furniture('Lace Doiling Art', 'image', FurnitureType('Wall Hanging', 'pos', 'size'), '2'),
     Furniture('Bubblegum Record Display', 'image', FurnitureType('Wall Hanging', 'pos', 'size'), '2'),
 
-    Furniture('light', 'image', FurnitureType('Light', 'pos', 'size'), '7'),
-    Furniture('light', 'image', FurnitureType('Light', 'pos', 'size'), '7'),
+    Furniture('Pink Bubble Chandalier', 'image', FurnitureType('Light', 'pos', 'size'), '7'),
+    Furniture('Pink Glow Gummy Light', 'image', FurnitureType('Light', 'pos', 'size'), '7'),
 
-    Furniture('dresser acs.', 'image', FurnitureType('Dresser Acessory', 'pos', 'size'), '2'),
-    Furniture('dresser acs.', 'image', FurnitureType('Dresser Acessory', 'pos', 'size'), '2'),
+    Furniture('Makeup Supplies', 'image', FurnitureType('Dresser Acessory', 'pos', 'size'), '2'),
+    Furniture('Digital Camera + Photos', 'image', FurnitureType('Dresser Acessory', 'pos', 'size'), '2'),
 
-    Furniture('clock', 'image', FurnitureType('Clock', 'pos', 'size'), '2'),
-    Furniture('clock', 'image', FurnitureType('Clock', 'pos', 'size'), '2'),
+    Furniture('Bubble Clock', 'image', FurnitureType('Clock', 'pos', 'size'), '2'),
+    Furniture('Lace Doily Clock', 'image', FurnitureType('Clock', 'pos', 'size'), '2'),
 
-    Furniture('side acessory one', 'image', FurnitureType('Side Acessory one', 'pos', 'size'), '4'),
-    Furniture('side acs. one', 'image', FurnitureType('Side Acessory one', 'pos', 'size'), '4'),
+    Furniture('Tall Scarf/Hat Rack', 'image', FurnitureType('Side Acessory one', 'pos', 'size'), '4'),
+    Furniture('Bubble lamp', 'image', FurnitureType('Side Acessory one', 'pos', 'size'), '4'),
+    Furniture('Giant pink Gummy bear stool', 'image', FurnitureType('Side Acessory one', 'pos', 'size'), '4'),
+    Furniture('Cute Shoe rack', 'image', FurnitureType('Side Acessory one', 'pos', 'size'), '4'),
 
-    Furniture('side acs. 2', 'image', FurnitureType('Side Acessory two', 'pos', 'size'), '4'),
-    Furniture('side acs. 2', 'image', FurnitureType('Side Acessory two', 'pos', 'size'), '4'),
+    Furniture('Tall Scarf/Hat Rack', 'image', FurnitureType('Side Acessory two', 'pos', 'size'), '4'),
+    Furniture('Bubble lamp', 'image', FurnitureType('Side Acessory two', 'pos', 'size'), '4'),
+    Furniture('Giant pink Gummy bear stool', 'image', FurnitureType('Side Acessory two', 'pos', 'size'), '4'),
+    Furniture('Cute Shoe rack', 'image', FurnitureType('Side Acessory two', 'pos', 'size'), '4'),
 
-    Furniture('flooring', 'image', FurnitureType('Flooring', 'pos', 'size'), '2'),
-    Furniture('flooring', 'image', FurnitureType('Flooring', 'pos', 'size'), '2'),
+    Furniture('Light-Wood flooring', 'image', FurnitureType('Flooring', 'pos', 'size'), '2'),
+    Furniture('Dark Oak Flooring', 'image', FurnitureType('Flooring', 'pos', 'size'), '2'),
 
-    Furniture('wallpaper', 'image', FurnitureType('Wallpaper', 'pos', 'size'), '2'),
-    Furniture('wallpaper', 'image', FurnitureType('Wallpaper', 'pos', 'size'), '2'),
+    Furniture('pink gummy bear wallpaper', 'image', FurnitureType('Wallpaper', 'pos', 'size'), '2'),
+    Furniture('intricate doily wallpaper', 'image', FurnitureType('Wallpaper', 'pos', 'size'), '2'),
 
     Furniture('Arch Window', 'image', FurnitureType('Window', 'pos', 'size'), '15'),
     Furniture('Delicate Frame Window', 'image', FurnitureType('Window', 'pos', 'size'), '15')
 ]
 
 fig4_Furniture = [
-    Furniture('bed', 'image', FurnitureType('Bed', 'pos', 'size'), '10'),
-    Furniture('bed', 'image', FurnitureType('Bed', 'pos', 'size'), '10'),
+    Furniture('Chocolate inset wall bed', 'image', FurnitureType('Bed', 'pos', 'size'), '10'),
+    Furniture('Low Chocolate Coffee twin bed', 'image', FurnitureType('Bed', 'pos', 'size'), '10'),
 
-    Furniture('rug', 'image', FurnitureType('Rug', 'pos', 'size'), '3'),
-    Furniture('rug', 'image', FurnitureType('Rug', 'pos', 'size'), '2'),
+    Furniture('Chocolate Coffee rug', 'image', FurnitureType('Rug', 'pos', 'size'), '3'),
+    Furniture('Sophisiticated tweed rug', 'image', FurnitureType('Rug', 'pos', 'size'), '2'),
 
-    Furniture('rug', 'image', FurnitureType('Dresser', 'pos', 'size'), '5'),
-    Furniture('rug', 'image', FurnitureType('Dresser', 'pos', 'size'), '5'),
+    Furniture('Chocolate Dresser', 'image', FurnitureType('Dresser', 'pos', 'size'), '5'),
+    Furniture('Coffee Dresser', 'image', FurnitureType('Dresser', 'pos', 'size'), '5'),
 
-    Furniture('wall hanging', 'image', FurnitureType('Wall Hanging', 'pos', 'size'), '2'),
+    Furniture('Book posters/collage', 'image', FurnitureType('Wall Hanging', 'pos', 'size'), '2'),
     Furniture('Chocolate Record Display', 'image', FurnitureType('Wall Hanging', 'pos', 'size'), '2'),
 
     Furniture('light', 'image', FurnitureType('Light', 'pos', 'size'), '7'),
     Furniture('light', 'image', FurnitureType('Light', 'pos', 'size'), '7'),
 
-    Furniture('dresser asc.', 'image', FurnitureType('Dresser Acessory', 'pos', 'size'), '2'),
-    Furniture('dresser asc.', 'image', FurnitureType('Dresser Acessory', 'pos', 'size'), '2'),
+    Furniture('Journaling supplies', 'image', FurnitureType('Dresser Acessory', 'pos', 'size'), '2'),
+    Furniture('Chocolate Caramel Record Player', 'image', FurnitureType('Dresser Acessory', 'pos', 'size'), '2'),
 
-    Furniture('clock', 'image', FurnitureType('Clock', 'pos', 'size'), '2'),
-    Furniture('clock', 'image', FurnitureType('Clock', 'pos', 'size'), '2'),
+    Furniture('Chocolate Clock', 'image', FurnitureType('Clock', 'pos', 'size'), '2'),
+    Furniture('Caramel Clock', 'image', FurnitureType('Clock', 'pos', 'size'), '2'),
 
-    Furniture('side acs. 1', 'image', FurnitureType('Side Acessory one', 'pos', 'size'), '4'),
-    Furniture('side acs 1', 'image', FurnitureType('Side Acessory one', 'pos', 'size'), '4'),
+    Furniture('Caramel Hat/scarf stand', 'image', FurnitureType('Side Acessory one', 'pos', 'size'), '4'),
+    Furniture('Chocolate Hanging chair/reading nook', 'image', FurnitureType('Side Acessory one', 'pos', 'size'), '4'),
+    Furniture('Short bookshelf w/blankets on top', 'image', FurnitureType('Side Acessory one', 'pos', 'size'), '4'),
+    Furniture('Cream/Coffee/Chocolate/Caramel Stuffy basket', 'image', FurnitureType('Side Acessory one', 'pos', 'size'), '4'),
 
-    Furniture('side acs. 2', 'image', FurnitureType('Side Acessory two', 'pos', 'size'), '4'),
-    Furniture('side acs. 2', 'image', FurnitureType('Side Acessory two', 'pos', 'size'), '4'),
+    Furniture('Caramel Hat/scarf stand', 'image', FurnitureType('Side Acessory one', 'pos', 'two'), '4'),
+    Furniture('Chocolate Hanging chair/reading nook', 'image', FurnitureType('Side Acessory two', 'pos', 'size'), '4'),
+    Furniture('Short bookshelf w/blankets on top', 'image', FurnitureType('Side Acessory two', 'pos', 'size'), '4'),
+    Furniture('Cream/Coffee/Chocolate/Caramel Stuffy basket', 'image', FurnitureType('Side Acessory two', 'pos', 'size'), '4'),
 
-    Furniture('flooring', 'image', FurnitureType('Flooring', 'pos', 'size'), '2'),
-    Furniture('flooring', 'image', FurnitureType('Flooring', 'pos', 'size'), '2'),
+    Furniture('Light Wood Flooring', 'image', FurnitureType('Flooring', 'pos', 'size'), '2'),
+    Furniture('Fluffy Carpet', 'image', FurnitureType('Flooring', 'pos', 'size'), '2'),
 
-    Furniture('wallpaper', 'image', FurnitureType('Wallpaper', 'pos', 'size'), '2'),
-    Furniture('wallpaper', 'image', FurnitureType('Wallpaper', 'pos', 'size'), '2'),
+    Furniture('Dark Oak Paneling', 'image', FurnitureType('Wallpaper', 'pos', 'size'), '2'),
+    Furniture('Caramel framed wallpaper', 'image', FurnitureType('Wallpaper', 'pos', 'size'), '2'),
 
     Furniture('Arch Window', 'image', FurnitureType('Window', 'pos', 'size'), '15'),
     Furniture('Delicate Frame Window', 'image', FurnitureType('Window', 'pos', 'size'), '15')
@@ -512,6 +528,7 @@ def check_uid_and_switch_screen(uid):
 
 def fig1_screen():
     print("You're on Fig_1 Screen")
+    print("\n----------------------------------------------------------------------------------------------\n|                                                                                            |\n|                                                                                            |\n|      --------                                                                              |\n|     | |    | |                 -------------------------------------------------           |\n|     |   |    |                |                   Dress-up                      |          |\n|     | |____| |                |                                                 |          |\n|      --------                  -------------------------------------------------           |\n|        |  |                                                                                |\n|  ------|  |-------             -------------------------------------------------           |\n| |      ----       |           |                    Bedroom                      |          |\n| |                 |           |                                                 |          |\n| |.  |         |.  |            -------------------------------------------------           |\n| |___|         |___|                                                                        |\n| |.  |         |.  |            -------------------------------------------------           |\n| |.  |         |.  |           |                     Music                       |          |\n| |.  |.        |.  |           |                                                 |          |\n| |.  |_________|.  |            -------------------------------------------------           |\n| |___|         |___|                                                                        |\n|.    |.        |                -------------------------------------------------           |\n|.    |.   |.   |               |                     Camera                      |          |\n|.    |.   |.   |               |                                                 |          |\n|.    |.   |.   |                -------------------------------------------------           |\n|     |.   |.   |                                                                            |\n|.    |.   |.   |                                                                            |\n|     |.   |.   |                                                                            |\n|.    |.   |.   |                                                     ------------------     |\n|. ----    |.   ----                                                 |       back       |    |\n| |________|________|                                                 ------------------     |\n----------------------------------------------------------------------------------------------\n")
     # Code to display fig1 screen with buttons for Dressup, Bedroom, Music, and Camera
     #if dressup button is clicked, call dressup_screen(fig1)
     #if bedroom button is clicked, call bedroom_screen(fig1)
@@ -534,10 +551,9 @@ def fig1_screen():
         print("I didn't quite get that.")
         fig1_screen()
 
-#build actual screen
-
 def fig2_screen():
     print("You're on Fig_2 Screen")
+    print("\n----------------------------------------------------------------------------------------------\n|                                                                                            |\n|                                                                                            |\n|      --------                                                                              |\n|     | |    | |                 -------------------------------------------------           |\n|     |   |    |                |                   Dress-up                      |          |\n|     | |____| |                |                                                 |          |\n|      --------                  -------------------------------------------------           |\n|        |  |                                                                                |\n|  ------|  |-------             -------------------------------------------------           |\n| |      ----       |           |                    Bedroom                      |          |\n| |                 |           |                                                 |          |\n| |.  |         |.  |            -------------------------------------------------           |\n| |___|         |___|                                                                        |\n| |.  |         |.  |            -------------------------------------------------           |\n| |.  |         |.  |           |                     Music                       |          |\n| |.  |.        |.  |           |                                                 |          |\n| |.  |_________|.  |            -------------------------------------------------           |\n| |___|         |___|                                                                        |\n|.    |.        |                -------------------------------------------------           |\n|.    |.   |.   |               |                     Camera                      |          |\n|.    |.   |.   |               |                                                 |          |\n|.    |.   |.   |                -------------------------------------------------           |\n|     |.   |.   |                                                                            |\n|.    |.   |.   |                                                                            |\n|     |.   |.   |                                                                            |\n|.    |.   |.   |                                                     ------------------     |\n|. ----    |.   ----                                                 |       back       |    |\n| |________|________|                                                 ------------------     |\n----------------------------------------------------------------------------------------------\n")
     # Code to display fig2 screen with buttons for Dressup, Bedroom, Music, and Camera
     #if dressup button is clicked, call dressup_screen(fig2)
     #if bedroom button is clicked, call bedroom_screen(fig2)
@@ -558,10 +574,9 @@ def fig2_screen():
         print("I didn't quite get that.")
         fig2_screen()
 
-#build actual screen
-
 def fig3_screen():
     print("You're on Fig_3 Screen")
+    print("\n----------------------------------------------------------------------------------------------\n|                                                                                            |\n|                                                                                            |\n|      --------                                                                              |\n|     | |    | |                 -------------------------------------------------           |\n|     |   |    |                |                   Dress-up                      |          |\n|     | |____| |                |                                                 |          |\n|      --------                  -------------------------------------------------           |\n|        |  |                                                                                |\n|  ------|  |-------             -------------------------------------------------           |\n| |      ----       |           |                    Bedroom                      |          |\n| |                 |           |                                                 |          |\n| |.  |         |.  |            -------------------------------------------------           |\n| |___|         |___|                                                                        |\n| |.  |         |.  |            -------------------------------------------------           |\n| |.  |         |.  |           |                     Music                       |          |\n| |.  |.        |.  |           |                                                 |          |\n| |.  |_________|.  |            -------------------------------------------------           |\n| |___|         |___|                                                                        |\n|.    |.        |                -------------------------------------------------           |\n|.    |.   |.   |               |                     Camera                      |          |\n|.    |.   |.   |               |                                                 |          |\n|.    |.   |.   |                -------------------------------------------------           |\n|     |.   |.   |                                                                            |\n|.    |.   |.   |                                                                            |\n|     |.   |.   |                                                                            |\n|.    |.   |.   |                                                     ------------------     |\n|. ----    |.   ----                                                 |       back       |    |\n| |________|________|                                                 ------------------     |\n----------------------------------------------------------------------------------------------\n")
     # Code to display fig3 screen with buttons for Dressup, Bedroom, Music, and Camera
     #if dressup button is clicked, call dressup_screen(fig3)
     #if bedroom button is clicked, call bedroom_screen(fig3)
@@ -582,10 +597,9 @@ def fig3_screen():
         print("I didn't quite get that.")
         fig3_screen()
 
-#build actual screen
-
 def fig4_screen():
     print("You're on Fig_4 Screen")
+    print("\n----------------------------------------------------------------------------------------------\n|                                                                                            |\n|                                                                                            |\n|      --------                                                                              |\n|     | |    | |                 -------------------------------------------------           |\n|     |   |    |                |                   Dress-up                      |          |\n|     | |____| |                |                                                 |          |\n|      --------                  -------------------------------------------------           |\n|        |  |                                                                                |\n|  ------|  |-------             -------------------------------------------------           |\n| |      ----       |           |                    Bedroom                      |          |\n| |                 |           |                                                 |          |\n| |.  |         |.  |            -------------------------------------------------           |\n| |___|         |___|                                                                        |\n| |.  |         |.  |            -------------------------------------------------           |\n| |.  |         |.  |           |                     Music                       |          |\n| |.  |.        |.  |           |                                                 |          |\n| |.  |_________|.  |            -------------------------------------------------           |\n| |___|         |___|                                                                        |\n|.    |.        |                -------------------------------------------------           |\n|.    |.   |.   |               |                     Camera                      |          |\n|.    |.   |.   |               |                                                 |          |\n|.    |.   |.   |                -------------------------------------------------           |\n|     |.   |.   |                                                                            |\n|.    |.   |.   |                                                                            |\n|     |.   |.   |                                                                            |\n|.    |.   |.   |                                                     ------------------     |\n|. ----    |.   ----                                                 |       back       |    |\n| |________|________|                                                 ------------------     |\n----------------------------------------------------------------------------------------------\n")
     # Code to display fig4 screen with buttons for Dressup, Bedroom, Music, and Camera
     #if dressup button is clicked, call dressup_screen(fig4)
     #if bedroom button is clicked, call bedroom_screen(fig4)
@@ -607,6 +621,36 @@ def fig4_screen():
         fig4_screen()
 
 #build actual screen
+#----------------------------------------------------------------------------------------------
+#|                                                                                            |
+#|                                                                                            |
+#|      --------                                                                              |
+#|     | |    | |                 -------------------------------------------------           |
+#|     |   |    |                |                   Dress-up                      |          |
+#|     | |____| |                |                                                 |          |
+#|      --------                  -------------------------------------------------           |
+#|        |  |                                                                                |
+#|  ------|  |-------             -------------------------------------------------           |
+#| |      ----       |           |                    Bedroom                      |          |
+#| |                 |           |                                                 |          |
+#| |.  |         |.  |            -------------------------------------------------           |
+#| |___|         |___|                                                                        |
+#| |.  |         |.  |            -------------------------------------------------           |
+#| |.  |         |.  |           |                     Music                       |          |
+#| |.  |.        |.  |           |                                                 |          |
+#| |.  |_________|.  |            -------------------------------------------------           |
+#| |___|         |___|                                                                        |
+#|.    |.        |                -------------------------------------------------           |
+#|.    |.   |.   |               |                     Camera                      |          |
+#|.    |.   |.   |               |                                                 |          |
+#|.    |.   |.   |                -------------------------------------------------           |
+#|     |.   |.   |                                                                            |
+#|.    |.   |.   |                                                                            |
+#|     |.   |.   |                                                                            |
+#|.    |.   |.   |                                                     ------------------     | 
+#|. ----    |.   ----                                                 |       back       |    |
+#| |________|________|                                                 ------------------     |
+#----------------------------------------------------------------------------------------------
 
 def dressup_screen(fig):
     print(f"your on dressup_screen for {fig}")

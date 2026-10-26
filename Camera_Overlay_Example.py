@@ -1,4 +1,4 @@
-from picamera2 import Picamera2, Preview
+"""from picamera2 import Picamera2, Preview
 import numpy as np
 from time import sleep
 
@@ -14,4 +14,4 @@ picam2.set_overlay(overlay)
 picam2.start_preview(Preview.QTGL)
 picam2.start()
 sleep(2)
-picam2.capture_file("test.jpg")
+picam2.capture_file("test.jpg")"""

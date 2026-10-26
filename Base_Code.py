@@ -35,29 +35,21 @@ buttons = [Up_Arrow, Down_Arrow, Left_Arrow, Right_Arrow, Confirm_Button, Back_B
 #Turn Power_LED on When code starts up
 Power_LED.on()
 
-class Button:
-    def __init__(self, pin, pin_factory=pin_factory):
-        self.pin = pin
-        self.pin_factory = pin_factory
-        self.is_pressed = False
-
-    def when_pressed(self):
-        self.is_pressed = True
-        pass
-
-    def when_released(self):
-        self.is_pressed = False
-        pass
-
 class Figurine:
-    def __init__(self, name, fig_number, UID):
+    def __init__(self, name, fig_number, UID, screen):
         self.name = name
         self.fig_number = fig_number
         self.UID = UID
+        self.screen = screen
 
     def placed(self):
         # Code to switch screen based on the figurine placed
         pass
+
+fig1 = Figurine('Evangaline')
+fig2 = Figurine('August')
+fig3 = Figurine('Elle')
+fig4 = Figurine('Blythe')
 
 class Furniture:
     def __init__(self, name, image, furniture_type, price):
@@ -85,6 +77,218 @@ class FurnitureType:
         self.name = name
         self.position = position
         self.size = size
+
+fig1_basic_Furniture = [
+    Furniture('Cherry Bed', 'image', FurnitureType('Bed', 'pos', 'size'), '10'),
+    Furniture('Fluffy Cream Rug', 'image', FurnitureType('Rug', 'pos', 'size'), '3'),
+    Furniture('Cherry Dresser', 'image', FurnitureType('Dresser', 'pos', 'size'), '5'),
+    Furniture('Cherry Tapestry', 'image', FurnitureType('Wall Hanging', 'pos', 'size'), '2'),
+    Furniture('Cherry Lamp', 'image', FurnitureType('Light', 'pos', 'size'), '7'),
+    Furniture('Cherry Sewing Machine', 'image', FurnitureType('Dresser Acessory', 'pos', 'size'), '2'),
+    Furniture('Cream Clock', 'image', FurnitureType('Clock', 'pos', 'size'), '2'),
+    Furniture('Dress Form', 'image', FurnitureType('Side Acessory one', 'pos', 'size'), '4'),
+    Furniture('Cozy Bean Bag', 'image', FurnitureType('Side Acessory two', 'pos', 'size'), '4'),
+    Furniture('Light Wood Flooring', 'image', FurnitureType('Flooring', 'pos', 'size'), '2'),
+    Furniture('Cream Ribbed Wallpaper', 'image', FurnitureType('Wallpaper', 'pos', 'size'), '2'),
+    Furniture('Box Window with Red Curtains', 'image', FurnitureType('Window', 'pos', 'size'), '15')
+]
+
+fig2_basic_Furniture = [
+    Furniture('Cozy Bed', 'image', FurnitureType('Bed', 'pos', 'size'), '10'),
+    Furniture('Chai Rug', 'image', FurnitureType('Rug', 'pos', 'size'), '3'),
+    Furniture('Cozy Dresser', 'image', FurnitureType('Dresser', 'pos', 'size'), '5'),
+    Furniture('Cozy Bookshelves', 'image', FurnitureType('Wall Hanging', 'pos', 'size'), '2'),
+    Furniture('Starry Lamp', 'image', FurnitureType('Light', 'pos', 'size'), '7'),
+    Furniture('Basket of Yarn with knit + Crochet needles', 'image', FurnitureType('Dresser Acessory', 'pos', 'size'), '2'),
+    Furniture('Chai Clock', 'image', FurnitureType('Clock', 'pos', 'size'), '2'),
+    Furniture('Chai Chair', 'image', FurnitureType('Side Acessory one', 'pos', 'size'), '4'),
+    Furniture('Tall Chai Lamp', 'image', FurnitureType('Side Acessory two', 'pos', 'size'), '4'),
+    Furniture('Midtone Wood Flooring', 'image', FurnitureType('Flooring', 'pos', 'size'), '2'),
+    Furniture('Creamy Leaf Detailed Wallpaper', 'image', FurnitureType('Wallpaper', 'pos', 'size'), '2'),
+    Furniture('Box Window with Cozy Drapes', 'image', FurnitureType('Window', 'pos', 'size'), '15')
+]
+
+fig3_basic_Furniture = [
+    Furniture('Bubblegum Bed', 'image', FurnitureType('Bed', 'pos', 'size'), '10'),
+    Furniture('Pink Sweet-Heart Rug', 'image', FurnitureType('Rug', 'pos', 'size'), '3'),
+    Furniture('Cream Heart Dresser', 'image', FurnitureType('Dresser', 'pos', 'size'), '5'),
+    Furniture('Pink Posters', 'image', FurnitureType('Wall Hanging', 'pos', 'size'), '2'),
+    Furniture('Pink Tulip Light', 'image', FurnitureType('Light', 'pos', 'size'), '7'),
+    Furniture('Cute Stack of Magazines', 'image', FurnitureType('Dresser Acessory', 'pos', 'size'), '2'),
+    Furniture('Pink Sweet-Heart Clock', 'image', FurnitureType('Clock', 'pos', 'size'), '2'),
+    Furniture('Tall Pink Lamp', 'image', FurnitureType('Side Acessory one', 'pos', 'size'), '4'),
+    Furniture('Short Pink Bookshelf with fluffy blanket on top', 'image', FurnitureType('Side Acessory two', 'pos', 'size'), '4'),
+    Furniture('Fluffy Cream Carpet', 'image', FurnitureType('Flooring', 'pos', 'size'), '2'),
+    Furniture('Light pink Wallpaper', 'image', FurnitureType('Wallpaper', 'pos', 'size'), '2'),
+    Furniture('Box Window with Pink, Ruffle Curtains', 'image', FurnitureType('Window', 'pos', 'size'), '15')
+]
+
+fig4_basic_Furniture = [
+    Furniture('Caramel Bed', 'image', FurnitureType('Bed', 'pos', 'size'), '10'),
+    Furniture('Choclate Rug', 'image', FurnitureType('Rug', 'pos', 'size'), '3'),
+    Furniture('Sophisticated Caramel Dresser', 'image', FurnitureType('Dresser', 'pos', 'size'), '5'),
+    Furniture('Sophisticated Painting', 'image', FurnitureType('Wall Hanging', 'pos', 'size'), '2'),
+    Furniture('Simple Glass Oval Like with Dark wood base', 'image', FurnitureType('Light', 'pos', 'size'), '7'),
+    Furniture('Tall Stack of Books', 'image', FurnitureType('Dresser Acessory', 'pos', 'size'), '2'),
+    Furniture('Chocolate Clock', 'image', FurnitureType('Clock', 'pos', 'size'), '2'),
+    Furniture('Cozy Reading Chair', 'image', FurnitureType('Side Acessory one', 'pos', 'size'), '4'),
+    Furniture('Floor to Ceiling Chocolate Bookshelf', 'image', FurnitureType('Side Acessory two', 'pos', 'size'), '4'),
+    Furniture('Dark Oak Flooring', 'image', FurnitureType('Flooring', 'pos', 'size'), '2'),
+    Furniture('Detailed Coffe Walpaper', 'image', FurnitureType('Wallpaper', 'pos', 'size'), '2'),
+    Furniture('Box Window With Chocolate, Silk Drapes', 'image', FurnitureType('Window', 'pos', 'size'), '15')
+]
+
+fig1_Furniture = [
+    Furniture('Cozy Bed', 'image', FurnitureType('Bed', 'pos', 'size'), '10'),
+    Furniture('Cherry Soda Bed', 'image', FurnitureType('Bed', 'pos', 'size'), '10'),
+
+    Furniture('Cherry Red Rug', 'image', FurnitureType('Rug', 'pos', 'size'), '3'),
+    Furniture('Cherry Rug', 'image', FurnitureType('Rug', 'pos', 'size'), '3'),
+
+    Furniture('Cherry Red Dresser', 'image', FurnitureType('Dresser', 'pos', 'size'), '5'),
+    Furniture('Cream Dresser', 'image', FurnitureType('Dresser', 'pos', 'size'), '5'),
+
+    Furniture('Sewing Sketches', 'image', FurnitureType('Wall Hanging', 'pos', 'size'), '2'),
+    Furniture('Cherry Record Display', 'image', FurnitureType('Wall Hanging', 'pos', 'size'), '2'),
+
+    Furniture('Simple Cozy Light', 'image', FurnitureType('Light', 'pos', 'size'), '7'),
+    Furniture('Gummy Bear Chandalier', 'image', FurnitureType('Light', 'pos', 'size'), '7'),
+
+    Furniture('Magazines', 'image', FurnitureType('Dresser Acessory', 'pos', 'size'), '2'),
+    Furniture('Sewing Stuff', 'image', FurnitureType('Dresser Acessory', 'pos', 'size'), '2'),
+
+    Furniture('Cherry Shaped Clock', 'image', FurnitureType('Clock', 'pos', 'size'), '2'),
+    Furniture('Cherry Red Clock', 'image', FurnitureType('Clock', 'pos', 'size'), '2'),
+
+    Furniture('Cherry Lamp', 'image', FurnitureType('Side Acessory one', 'pos', 'size'), '4'),
+    Furniture('Cherry Side Table', 'image', FurnitureType('Side Acessory one', 'pos', 'size'), '4'),
+
+    Furniture('Fabric Storage', 'image', FurnitureType('Side Acessory two', 'pos', 'size'), '4'),
+    Furniture('Fluffy Chair', 'image', FurnitureType('Side Acessory two', 'pos', 'size'), '4'),
+
+    Furniture('Fluffy Carpet', 'image', FurnitureType('Flooring', 'pos', 'size'), '2'),
+    Furniture('Dark Oak Flooring', 'image', FurnitureType('Flooring', 'pos', 'size'), '2'),
+
+    Furniture('Cherry Print Wallpaper', 'image', FurnitureType('Wallpaper', 'pos', 'size'), '2'),
+    Furniture('Vine Border Wallpaper', 'image', FurnitureType('Wallpaper', 'pos', 'size'), '2'),
+
+    Furniture('Charming Arch Window', 'image', FurnitureType('Window', 'pos', 'size'), '15'),
+    Furniture('Inticate Frame Window', 'image', FurnitureType('Window', 'pos', 'size'), '15')
+]
+
+fig2_Furniture = [
+    Furniture('Cozy Bed', 'image', FurnitureType('Bed', 'pos', 'size'), '10'),
+    Furniture('A Bed', 'image', FurnitureType('Bed', 'pos', 'size'), '10'),
+
+    Furniture('A RUG', 'image', FurnitureType('Rug', 'pos', 'size'), '3'),
+    Furniture('A RUG', 'image', FurnitureType('Rug', 'pos', 'size'), '3'),
+
+    Furniture('A DRESSER', 'image', FurnitureType('Dresser', 'pos', 'size'), '5'),
+    Furniture('A DRESSER', 'image', FurnitureType('Dresser', 'pos', 'size'), '5'),
+
+    Furniture('Wall Hanging', 'image', FurnitureType('Wall Hanging', 'pos', 'size'), '2'),
+    Furniture('Chai record Display', 'image', FurnitureType('Wall Hanging', 'pos', 'size'), '2'),
+
+    Furniture('light', 'image', FurnitureType('Light', 'pos', 'size'), '7'),
+    Furniture('light', 'image', FurnitureType('Light', 'pos', 'size'), '7'),
+
+    Furniture('Dresser Acessory', 'image', FurnitureType('Dresser Acessory', 'pos', 'size'), '2'),
+    Furniture('Dresser Acessory', 'image', FurnitureType('Dresser Acessory', 'pos', 'size'), '2'),
+
+    Furniture('Clock', 'image', FurnitureType('Clock', 'pos', 'size'), '2'),
+    Furniture('Clock', 'image', FurnitureType('Clock', 'pos', 'size'), '2'),
+
+    Furniture('Side Acessory one', 'image', FurnitureType('Side Acessory one', 'pos', 'size'), '4'),
+    Furniture('Side Acessory one', 'image', FurnitureType('Side Acessory one', 'pos', 'size'), '4'),
+
+    Furniture('Side Acessory two', 'image', FurnitureType('Side Acessory two', 'pos', 'size'), '4'),
+    Furniture('Side Acessory two', 'image', FurnitureType('Side Acessory two', 'pos', 'size'), '4'),
+
+    Furniture('flooring', 'image', FurnitureType('Flooring', 'pos', 'size'), '2'),
+    Furniture('flooring', 'image', FurnitureType('Flooring', 'pos', 'size'), '2'),
+
+    Furniture('Wallpaper', 'image', FurnitureType('Wallpaper', 'pos', 'size'), '2'),
+    Furniture('Wallpaper', 'image', FurnitureType('Wallpaper', 'pos', 'size'), '2'),
+
+    Furniture('Arch Window', 'image', FurnitureType('Window', 'pos', 'size'), '15'),
+    Furniture('Delicate Frame Window', 'image', FurnitureType('Window', 'pos', 'size'), '15')
+]
+
+fig3_Furniture = [
+    Furniture('Bed', 'image', FurnitureType('Bed', 'pos', 'size'), '10'),
+    Furniture('bed', 'image', FurnitureType('Bed', 'pos', 'size'), '10'),
+
+    Furniture('rug', 'image', FurnitureType('Rug', 'pos', 'size'), '3'),
+    Furniture('rug', 'image', FurnitureType('Rug', 'pos', 'size'), '3'),
+
+    Furniture('dresser', 'image', FurnitureType('Dresser', 'pos', 'size'), '5'),
+    Furniture('dresser', 'image', FurnitureType('Dresser', 'pos', 'size'), '5'),
+
+    Furniture('wall hanging', 'image', FurnitureType('Wall Hanging', 'pos', 'size'), '2'),
+    Furniture('Bubblegum Record Display', 'image', FurnitureType('Wall Hanging', 'pos', 'size'), '2'),
+
+    Furniture('light', 'image', FurnitureType('Light', 'pos', 'size'), '7'),
+    Furniture('light', 'image', FurnitureType('Light', 'pos', 'size'), '7'),
+
+    Furniture('dresser acs.', 'image', FurnitureType('Dresser Acessory', 'pos', 'size'), '2'),
+    Furniture('dresser acs.', 'image', FurnitureType('Dresser Acessory', 'pos', 'size'), '2'),
+
+    Furniture('clock', 'image', FurnitureType('Clock', 'pos', 'size'), '2'),
+    Furniture('clock', 'image', FurnitureType('Clock', 'pos', 'size'), '2'),
+
+    Furniture('side acessory one', 'image', FurnitureType('Side Acessory one', 'pos', 'size'), '4'),
+    Furniture('side acs. one', 'image', FurnitureType('Side Acessory one', 'pos', 'size'), '4'),
+
+    Furniture('side acs. 2', 'image', FurnitureType('Side Acessory two', 'pos', 'size'), '4'),
+    Furniture('side acs. 2', 'image', FurnitureType('Side Acessory two', 'pos', 'size'), '4'),
+
+    Furniture('flooring', 'image', FurnitureType('Flooring', 'pos', 'size'), '2'),
+    Furniture('flooring', 'image', FurnitureType('Flooring', 'pos', 'size'), '2'),
+
+    Furniture('wallpaper', 'image', FurnitureType('Wallpaper', 'pos', 'size'), '2'),
+    Furniture('wallpaper', 'image', FurnitureType('Wallpaper', 'pos', 'size'), '2'),
+
+    Furniture('Arch Window', 'image', FurnitureType('Window', 'pos', 'size'), '15'),
+    Furniture('Delicate Frame Window', 'image', FurnitureType('Window', 'pos', 'size'), '15')
+]
+
+fig4_Furniture = [
+    Furniture('bed', 'image', FurnitureType('Bed', 'pos', 'size'), '10'),
+    Furniture('bed', 'image', FurnitureType('Bed', 'pos', 'size'), '10'),
+
+    Furniture('rug', 'image', FurnitureType('Rug', 'pos', 'size'), '3'),
+    Furniture('rug', 'image', FurnitureType('Rug', 'pos', 'size'), '2'),
+
+    Furniture('rug', 'image', FurnitureType('Dresser', 'pos', 'size'), '5'),
+    Furniture('rug', 'image', FurnitureType('Dresser', 'pos', 'size'), '5'),
+
+    Furniture('wall hanging', 'image', FurnitureType('Wall Hanging', 'pos', 'size'), '2'),
+    Furniture('Chocolate Record Display', 'image', FurnitureType('Wall Hanging', 'pos', 'size'), '2'),
+
+    Furniture('light', 'image', FurnitureType('Light', 'pos', 'size'), '7'),
+    Furniture('light', 'image', FurnitureType('Light', 'pos', 'size'), '7'),
+
+    Furniture('dresser asc.', 'image', FurnitureType('Dresser Acessory', 'pos', 'size'), '2'),
+    Furniture('dresser asc.', 'image', FurnitureType('Dresser Acessory', 'pos', 'size'), '2'),
+
+    Furniture('clock', 'image', FurnitureType('Clock', 'pos', 'size'), '2'),
+    Furniture('clock', 'image', FurnitureType('Clock', 'pos', 'size'), '2'),
+
+    Furniture('side acs. 1', 'image', FurnitureType('Side Acessory one', 'pos', 'size'), '4'),
+    Furniture('side acs 1', 'image', FurnitureType('Side Acessory one', 'pos', 'size'), '4'),
+
+    Furniture('side acs. 2', 'image', FurnitureType('Side Acessory two', 'pos', 'size'), '4'),
+    Furniture('side acs. 2', 'image', FurnitureType('Side Acessory two', 'pos', 'size'), '4'),
+
+    Furniture('flooring', 'image', FurnitureType('Flooring', 'pos', 'size'), '2'),
+    Furniture('flooring', 'image', FurnitureType('Flooring', 'pos', 'size'), '2'),
+
+    Furniture('wallpaper', 'image', FurnitureType('Wallpaper', 'pos', 'size'), '2'),
+    Furniture('wallpaper', 'image', FurnitureType('Wallpaper', 'pos', 'size'), '2'),
+
+    Furniture('Arch Window', 'image', FurnitureType('Window', 'pos', 'size'), '15'),
+    Furniture('Delicate Frame Window', 'image', FurnitureType('Window', 'pos', 'size'), '15')
+]
 
 class Clothing:
     def __init__(self, name, image, clothing_type, price):
@@ -250,52 +454,46 @@ def move_servo():
 #When Left Arrow pressed if on 'back' move to D if on A-D do nothing
 #When Right Arrow pressed if on A-D move to 'back' if on 'back' do nothing
 
-def button_pressed(button):
-
-    if button == Up_Arrow:
-        print("Up Arrow pressed")
-        Up_Arrow_pressed()
-    elif button == Down_Arrow:
-        print("Down Arrow pressed")
-        Down_Arrow_pressed()
-    elif button == Left_Arrow:
-        print("Left Arrow pressed")
-        Left_Arrow_pressed()
-    elif button == Right_Arrow:
-        print("Right Arrow pressed")
-        Right_Arrow_pressed()
-    elif button == Confirm_Button:
-        print("Confirm Button pressed")
-        Confirm_Button_pressed()
-    elif button == Back_Button:
-        print("Back Button pressed")
-        Back_Button_pressed()
-
 def Up_Arrow_pressed():
-    print("Up Arrow pressed")
-    # Up Arrow button pressed
+
+    #If on button A:
+    # break
+    #Elif on button B:
+    #  move to button A
+    #Elif on button C:
+    #   move to button B
+    #Elif on button D:
+    #   move to button C
+    pass
 
 def Down_Arrow_pressed():
-    print("Down Arrow pressed")
+    #If on button A:
+        # move to button B
+        #Elif on button B:
+        #  move to button C
+        #Elif on button C:
+        #   move to button D
+        #Elif on button D:
+        #   break
     # Down Arrow button pressed
+    pass
 
 def Left_Arrow_pressed():
-    print("Left Arrow pressed")
+    #If on 'back' button go to button D
+    #If on button A-D do nothing
     # Left Arrow button pressed
+    pass
 
 def Right_Arrow_pressed():
-    print("Right Arrow pressed")
+    #If on button A-D go to 'back'
+    #If on 'back' do nothing
     # Right Arrow button pressed
+    pass
 
 def Confirm_Button_pressed():
-    print("Confirm Button pressed")
-    Confirm_Button.when_pressed = Confirm_Button_pressed
+    # Hit Button currently pressed on
     # Confirm Button pressed
-
-def Back_Button_pressed():
-    print("Back Button pressed")
-    Back_Button.when_pressed = Back_Button_pressed
-    # Back Button pressed
+    pass
 
 def check_uid_and_switch_screen(uid):
     fig1_UID = [0x04, 0xA2, 0xB3, 0xC4]  # Example UID for fig1

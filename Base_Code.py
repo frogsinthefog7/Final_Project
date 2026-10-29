@@ -343,7 +343,10 @@ fig1_Dressup = [
     Clothing('Light Cordoroy Newsboy hat', 'image', ClothingType('Hat', 'pos', 'size'), '5 coins'),
     Clothing('Cherry Headband', 'image', ClothingType('Hat', 'pos', 'size'), '3 coins'),
     Clothing('Sweetheart Necklace', 'image', ClothingType('Acessory', 'pos', 'size'), '2 coins'),
-    Clothing('Swan Legwarmers', 'image', ClothingType('Acessory', 'pos', 'size'), '3 coins')
+    Clothing('Swan Legwarmers', 'image', ClothingType('Acessory', 'pos', 'size'), '3 coins'),
+    Clothing('Cherry Pocket Jeans', 'image', ClothingType('Bottoms', 'pos', 'size'), '4 coins'),
+    Clothing('Cherry Tights', 'image', ClothingType('Acessory', 'pos', 'size', '2 coins')),
+    Clothing('Darling Cherry Dress', ClothingType('Top', 'pos', 'size', '7 coins'))
 ]
 
 fig2_Dressup = [
@@ -356,7 +359,10 @@ fig2_Dressup = [
     Clothing('Dark Cordoroy Newsboy hat', 'image', ClothingType('Hat', 'pos', 'size'), '5 coins'),
     Clothing('Cozy Beanie', 'image', ClothingType('Hat', 'pos', 'size'), '3 coins'),
     Clothing('Chuncky Leather Jacket', 'image', ClothingType('Acessory', 'pos', 'size'), '6 coins'),
-    Clothing('Leaf Earings', 'image', ClothingType('Acessory', 'pos', 'size'), '3 coins')
+    Clothing('Leaf Earings', 'image', ClothingType('Acessory', 'pos', 'size'), '3 coins'),
+    Clothing('Leaf Jean Shorts', 'image', ClothingType('Bottoms', 'pos', 'size'), '3 coins'),
+    Clothing('Chai Tights', 'image', ClothingType('Acessory', 'pos', 'size'), '2 coins'),
+    Clothing('Dreamy Chai Dress', 'image', ClothingType('Top', 'pos', 'size', '7 coins'))
     #cozy = cream/green/yellow/black stripes vibe
 ]
 
@@ -370,20 +376,25 @@ fig3_Dressup = [
     Clothing('Carmel Ribbon', 'image', ClothingType('Hat', 'pos', 'size'), '5 coins'),
     Clothing('Bow Clips', 'image', ClothingType('Hat', 'pos', 'size'), '3 coins'),
     Clothing('Chantilly Leg-Warmers', 'image', ClothingType('Acessory', 'pos', 'size'), '6 coins'),
-    Clothing('Carmel-Ribbon Necklace', 'image', ClothingType('Acessory', 'pos', 'size'), '3 coins')
+    Clothing('Carmel-Ribbon Necklace', 'image', ClothingType('Acessory', 'pos', 'size'), '3 coins'),
+    Clothing('Pink Stripes Foldover Shorts', 'image', ClothingType('Bottoms', 'pos', 'size'), '3 coins'),
+    Clothing('Bubblegum Tights', 'image', ClothingType('Acessory', 'pos', 'size'), '2 coins'),
+    Clothing('Chantilly Dress', 'image', ClothingType('Top', 'pos','size'), '6 coins' )
 ]
 
 fig4_Dressup = [
     Clothing('Chocolate Waist-Coat, with Cream Blouse', 'image', ClothingType('Top', 'pos', 'size'), '6 coins'),
     Clothing('Carmel Sweater vest, with Coffee Blouse', 'image', ClothingType('Top', 'pos', 'size'), '4 coins'),
     Clothing('Chocolate Midi-Skirt', 'image', ClothingType('Bottoms', 'pos', 'size'), '4 coins'),
-    Clothing('Carmel Slacks', 'image', ClothingType('Bottoms', 'pos', 'size'), '5 coins'),
+    Clothing('Caramel Slacks', 'image', ClothingType('Bottoms', 'pos', 'size'), '5 coins'),
     Clothing('Black Mary-Janes', 'image', ClothingType('Shoes', 'pos', 'size'), '4 coins'),
     Clothing('Knee-High Black Boots', 'image', ClothingType('Shoes', 'pos', 'size'), '5 coins'),
     Clothing('Chocolate Barret', 'image', ClothingType('Hat', 'pos', 'size'), '5 coins'),
     Clothing('Coffe Lace-Ribbon', 'image', ClothingType('Hat', 'pos', 'size'), '3 coins'),
     Clothing('Chocolate Long-Coat', 'image', ClothingType('Acessory', 'pos', 'size'), '6 coins'),
-    Clothing('Dark-Chocolate Tights', 'image', ClothingType('Acessory', 'pos', 'size'), '3 coins')
+    Clothing('Dark-Chocolate Tights', 'image', ClothingType('Acessory', 'pos', 'size'), '3 coins'),
+    Clothing('Chocolate Leather Shorts', ClothingType('Bottoms', 'pos', 'size'), '4 coins'),
+    Clothing('Red Wine Tights', ClothingType('Acessory', 'pos', 'size'), '2 coins')
 ]
 
 #Figure PJ's (What they wear when no Outfit Applied)//No Acessories or hats

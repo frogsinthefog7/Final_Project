@@ -3,7 +3,7 @@ import button
 from time import *
 
 pygame.init()
-screen = pygame.display.set_mode((1000,500))#add ,pygame.FULLSCREEN to make it not have an x out button
+screen = pygame.display.set_mode((0,0), pygame.FULLSCREEN)#add ,pygame.FULLSCREEN to make it not have an x out button
 pygame.display.set_caption("SweetHearts")
 clock = pygame.time.Clock()
 running = True
@@ -17,22 +17,26 @@ DressUp_button_image_pushed = pygame.image.load("Dress-up_pushed.png").convert_a
 DressUp_button_image_unpushed = pygame.image.load("Dress-up_unpushed.png").convert_alpha()
 Music_button_image_pushed = pygame.image.load("Music_pushed.png").convert_alpha()
 Music_button_image_unpushed = pygame.image.load("Music_unpushed.png").convert_alpha()
+Exit_button_image_pushed = pygame.image.load("Exit_pushed.png").convert_alpha()
+Exit_button_image_unpushed = pygame.image.load("Exit_unpushed.png").convert_alpha()
 
 #create buttons instance
 x = screen.get_width()
 y = screen.get_height()
 
-bedroom_button_pushed = button.Button((x*3/4), (y*2/16), Bedroom_button_image_pushed, (y//100))
-bedroom_button_unpushed = button.Button((x*3/4), (y*2/16), Bedroom_button_image_unpushed, (y//100))
-camera_button_pushed = button.Button((x*3/4), (y*6/16), Camera_button_image_pushed, (y//100))
-camera_button_unpushed = button.Button((x*3/4), (y*6/16), Camera_button_image_unpushed, (y//100))
-DressUp_button_pushed = button.Button((x*3/4), (y*10/16), DressUp_button_image_pushed, (y//100))
-DressUp_button_unpushed = button.Button((x*3/4), (y*10/16), DressUp_button_image_unpushed, (y//100))
-Music_button_pushed = button.Button((x*3/4), (y*14/16), Music_button_image_pushed, (y//100))
-Music_button_unpushed = button.Button((x*3/4), (y*14/16), Music_button_image_unpushed, (y//100))
+bedroom_button_pushed = button.Button((x*13.5/16), (y*2/16), Bedroom_button_image_pushed, (y//100))
+bedroom_button_unpushed = button.Button((x*13.5/16), (y*2/16), Bedroom_button_image_unpushed, (y//100))
+camera_button_pushed = button.Button((x*13.5/16), (y*6/16), Camera_button_image_pushed, (y//100))
+camera_button_unpushed = button.Button((x*13.5/16), (y*6/16), Camera_button_image_unpushed, (y//100))
+DressUp_button_pushed = button.Button((x*13.5/16), (y*10/16), DressUp_button_image_pushed, (y//100))
+DressUp_button_unpushed = button.Button((x*13.5/16), (y*10/16), DressUp_button_image_unpushed, (y//100))
+Music_button_pushed = button.Button((x*13.5/16), (y*14/16), Music_button_image_pushed, (y//100))
+Music_button_unpushed = button.Button((x*13.5/16), (y*14/16), Music_button_image_unpushed, (y//100))
+Exit_button_pushed = button.Button((x*1/16), (y*14.75/16), Exit_button_image_pushed, (y//150))
+Exit_button_unpushed = button.Button((x*1/16), (y*14.75/16), Exit_button_image_unpushed, (y//150))
 #use scale 8 for macbook
 
-color_fill = "Pink"
+color_fill = (202,228,241)
 
 while running:
     # poll for events
@@ -50,28 +54,22 @@ while running:
             DressUp_button_unpushed.draw(screen)
             Music_button_unpushed.draw(screen)
             bedroom_button_pushed.draw(screen)
+            Exit_button_unpushed.draw(screen)
             pygame.display.flip()
             pygame.display.update()
-            sleep(.5)
-            if color_fill == "Pink":
-                color_fill = (202,228,241)
-            else:
-                color_fill = "Pink"
+            sleep(.25)
 
     # RENDER YOUR GAME HERE
     if camera_button_unpushed.draw(screen) == True:
-        screen.fill(color_fill)
-        camera_button_pushed.draw(screen)
-        DressUp_button_unpushed.draw(screen)
-        Music_button_unpushed.draw(screen)
-        bedroom_button_unpushed.draw(screen)
-        pygame.display.flip()
-        pygame.display.update()
-        sleep(.5)
-        if color_fill == "Pink":
-            color_fill = (202,228,241)
-        else:
-            color_fill = "Pink"
+            screen.fill(color_fill)
+            camera_button_pushed.draw(screen)
+            DressUp_button_unpushed.draw(screen)
+            Music_button_unpushed.draw(screen)
+            bedroom_button_unpushed.draw(screen)
+            Exit_button_unpushed.draw(screen)
+            pygame.display.flip()
+            pygame.display.update()
+            sleep(.25)
 
     if DressUp_button_unpushed.draw(screen) == True:
             screen.fill(color_fill)
@@ -79,27 +77,34 @@ while running:
             camera_button_unpushed.draw(screen)
             Music_button_unpushed.draw(screen)
             bedroom_button_unpushed.draw(screen)
+            Exit_button_unpushed.draw(screen)
             pygame.display.flip()
             pygame.display.update()
-            sleep(.5)
-            if color_fill == "Pink":
-                color_fill = (202,228,241)
-            else:
-                color_fill = "Pink"
-
+            sleep(.25)
+            
     if Music_button_unpushed.draw(screen) == True:
             screen.fill(color_fill)
             Music_button_pushed.draw(screen)
             camera_button_unpushed.draw(screen)
             DressUp_button_unpushed.draw(screen)
             bedroom_button_unpushed.draw(screen)
+            Exit_button_unpushed.draw(screen)
             pygame.display.flip()
             pygame.display.update()
-            sleep(.5)
-            if color_fill == "Pink":
-                color_fill = (202,228,241)
-            else:
-                color_fill = "Pink"
+            sleep(.25)
+
+    if Exit_button_unpushed.draw(screen) == True:
+            screen.fill(color_fill)
+            camera_button_unpushed.draw(screen)
+            DressUp_button_unpushed.draw(screen)
+            Music_button_unpushed.draw(screen)
+            bedroom_button_unpushed.draw(screen)
+            Exit_button_pushed.draw(screen)
+
+            pygame.display.flip()
+            pygame.display.update()
+            sleep(.25)
+            running = False
 
 
 
